@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid #222222;
+  background: #222222;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__right {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.left_pic:not(:last-child) {
+  margin-right: 41px;
+}
+
+.right_pic:not(:last-child) {
+  margin-right: 33px;
+}
+
+.top {
+  background: #F1E4E6;
+  height: 764px;
+}
+
+.top__flex {
+  height: 764px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../Pics/A_man.png);
+  background-repeat: no-repeat;
+  background-position: -232px;
+}
+
+.the_brand {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.of_luxerius {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.fashion {
+  color: #F16D7F;
+}
+
+.top__text {
+  padding-left: 16px;
+  border-left: 20px solid red;
+}
+
+.top__offer_item {
+  margin-top: 65px;
+  margin-bottom: 76px;
+}
+
+.top__offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+}
+
+.offer__item:not(:last-child) {
+  width: 360px;
+  height: 260px;
+}
+
+.offer__item:nth-child(1) {
+  background-image: url(../Pics/for_woman.svg);
+}
+
+.offer__item:nth-child(2) {
+  background-image: url(../Pics/for_man.svg);
+}
+
+.offer__item:nth-child(3) {
+  background-image: url(../Pics/for_kids.svg);
+}
+
+.offer__item {
+  width: 100%;
+  height: 180px;
+  background-image: url(../Pics/accesories.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.red_text_for_offer {
+  color: #F16D7F;
+  font-size: 24px;
+}
+
+.text {
+  width: 154px;
+}
+
+.text_fetured_items {
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  text-align: center;
+}
+
+.text_after_fetured_items {
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.card__item__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  margin: 47px 0;
+}
+
+.card {
+  width: 360px;
+  height: 581px;
+  background: #F8F8F8;
+}
+
+.name__item {
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin-top: 25px;
+  margin-left: 18px;
+}
+
+.item__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin-top: 13px;
+  margin-left: 17px;
+}
+
+.price__item {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  margin-top: 18px;
+  margin-left: 18px;
+}
+
+.browse__all__product__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.browse__all__product {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 14px 39px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.upper__footer {
+  height: 341px;
+  background: #222224;
+  margin-top: 75px;
+}
+
+.upper__footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  height: 341px;
+}
+
+.upper__footer__item {
+  width: 360px;
+  height: 134px;
+}
+
+.upper__footer__item:nth-child(1) {
+  background-image: url(../Pics/Forma_1_upper_footer.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.upper__footer__item:nth-child(2) {
+  background-image: url(../Pics/Forma_2_upper_footer.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.upper__footer__item:nth-child(3) {
+  background-image: url(../Pics/Forma_3_upper_footer.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.upper__footer__heading {
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 76px;
+}
+
+.upper__footer__description {
+  font-size: 13.972px;
+  line-height: 17px;
+  color: #FBFBFB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: auto;
+  height: 56px;
+  width: 300px;
+  opacity: 0.7;
+}
+
+.middle__footer {
+  height: 448px;
+  background: url(../Pics/middle_footer_mountains.png);
+}
+
+.middle__footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 448px;
+}
+
+.subscribe:nth-child(1) {
+  width: 360px;
+  height: 225px;
+  background: url(../Pics/subscribe_info_photo.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.subsribe__text__left {
+  font-size: 20px;
+  line-height: 24px;
+  color: #222224;
+  height: 189px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: center;
+}
+
+.subscribe:nth-child(2) {
+  width: 557px;
+  height: 142px;
+}
+
+.subsribe__text__right {
+  font-size: 18px;
+  line-height: 30px;
+  color: #222224;
+  text-align: center;
+}
+
+.subscribe__span {
+  font-size: 24px;
+}
+
+.subscribe__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 78px;
+}
+
+.email__border__left {
+  width: 256px;
+  height: 49px;
+  padding-left: 22px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: none;
+  color: #222224;
+  opacity: 0.67;
+  background: #E1E1E1;
+}
+
+.email__border__right {
+  width: 100px;
+  height: 49px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: none;
+  background: #F16D7F;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.lower__footer {
+  background: #222224;
+}
+
+.lower__footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.lower__footer__left {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+
+.lower__footer__left__text::before {
+  content: "\00A9";
+  margin-right: 5px;
+}
+
+.lower__footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__icon:not(:last-child) {
+  margin-right: 7px;
+}
+/*# sourceMappingURL=style.css.map */
