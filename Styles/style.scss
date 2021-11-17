@@ -348,14 +348,15 @@ $color_top:#F1E4E6;
     margin-right: 5px;
 }
 
+.social__icon:not(:last-child) {
+    margin-right: 7px;
+}
+
 .lower__footer__right {
     display: flex;
     justify-content: center;
 }
 
-.social__icon:not(:last-child) {
-    margin-right: 7px;
-}
 
 
 
