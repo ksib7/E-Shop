@@ -9,13 +9,14 @@ $color_top:#F1E4E6;
 .header {
     border: 1px solid #222222;
     background: #222222;
+    padding: 20px 0;
 }
 
 .container {
     max-width: 1160px;
     width: 100%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0 10px;
 }
 
 .header__flex {
@@ -78,7 +79,7 @@ $color_top:#F1E4E6;
 .top__offer{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
 }
 
 .offer__item:not(:last-child) {
@@ -138,7 +139,7 @@ $color_top:#F1E4E6;
 .card__item__flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
     margin: 47px 0;
 }
 
@@ -199,7 +200,7 @@ $color_top:#F1E4E6;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
     height: 341px;
 }
 
@@ -328,6 +329,7 @@ $color_top:#F1E4E6;
 
 .lower__footer {
     background: #222224;
+    padding: 20px 0;
 }
 
 .lower__footer__flex {
