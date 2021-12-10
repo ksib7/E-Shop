@@ -137,12 +137,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background-image: url(../Pics/A_man.png);
   background-repeat: no-repeat;
   background-position: -13vw;
@@ -177,11 +177,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 19px;
 }
 
@@ -288,12 +288,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0;
 }
 
@@ -345,8 +345,8 @@
   line-height: 19px;
   text-align: center;
   text-decoration: none;
-  color: black;
-  border: 1px solid black;
+  color: #000000;
+  border: 1px solid #000000;
   padding: 14px 39px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -362,12 +362,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   gap: 30px;
   height: 341px;
 }
@@ -432,6 +432,7 @@
 .middle__footer {
   height: 448px;
   background: url(../Pics/middle_footer_mountains.png);
+  background-size: cover;
 }
 
 .middle__footer .middle__footer__flex {
@@ -631,8 +632,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  left: 36%;
+  margin-left: 3%;
   gap: 27px;
 }
 
@@ -755,7 +755,7 @@
 .pages {
   width: 284px;
   height: 44px;
-  border: 1px solid black;
+  border: 1px solid #000000;
   margin: 0 auto;
   margin-bottom: 96px;
 }
@@ -879,11 +879,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
@@ -1337,16 +1337,6 @@
   .cart__right__down {
     margin-top: 37px;
   }
-  /*Медиа запросы для страницы Registration*/
-  .filter__flex {
-    max-width: 770px;
-  }
-  .main-filter {
-    padding-left: 0px;
-  }
-  .filter-right {
-    left: 57%;
-  }
   /*Медиа запросы для страницы Catalog*/
   .card:nth-child(9) {
     display: none;
@@ -1356,6 +1346,15 @@
   }
   .pages {
     margin-bottom: 63px;
+  }
+  .filter__flex {
+    max-width: 770px;
+  }
+  .main-filter {
+    padding-left: 0px;
+  }
+  .filter-right {
+    margin-left: 12.7%;
   }
 }
 
@@ -1373,7 +1372,10 @@
   }
   /*Медиа запросы для страницы Catalog*/
   .filter-right {
-    left: 59.5%;
+    margin-left: 11.1%;
+  }
+  .filter__flex {
+    max-width: 757px;
   }
 }
 
@@ -1384,6 +1386,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .upper__footer {
     height: 610px;
@@ -1433,6 +1438,13 @@
   .card:nth-child(odd) {
     margin-right: 0px;
     margin-bottom: 0px;
+  }
+  /*Медиа запросы для страницы Catalog*/
+  .filter__flex {
+    max-width: 741px;
+  }
+  .filter-right {
+    margin-left: 9%;
   }
 }
 
@@ -1506,12 +1518,6 @@
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .filter__flex {
-    max-width: 380px;
-  }
-  .filter-right {
-    left: 38%;
-  }
   .card:nth-child(9) {
     display: block;
   }
@@ -1523,6 +1529,12 @@
   }
   .card:nth-child(9) {
     margin-bottom: 40px;
+  }
+  .filter__flex {
+    max-width: 380px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1663,6 +1675,15 @@
     margin-top: 17px;
     width: 100%;
   }
+  /*Медиа запросы для страницы Registration*/
+  .registration__flex__form {
+    max-width: 360px;
+    width: 100%;
+  }
+  .registration__flex__form > .input {
+    max-width: 360px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 323px) {
@@ -1672,6 +1693,10 @@
   }
   .cart__right__down .grand {
     padding-left: 0px;
+  }
+  /*Медиа запросы для страницы Catalog*/
+  .card__item__flex .card .card__img {
+    height: 418px;
   }
 }
 /*# sourceMappingURL=style.css.map */

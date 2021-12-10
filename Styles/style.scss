@@ -1,4 +1,24 @@
-$color_top:#F1E4E6;
+$color_dark:#222224;
+$color-black: #000000;
+$main-color: #F16D7F;
+$main-fontsize: 14px;
+$main-lineheight: 17px;
+
+@mixin SpaceBetween {
+    display: flex;
+    justify-content: space-between;  
+}
+
+@mixin DirectionColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin Align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 * {
     margin: 0;
@@ -20,8 +40,7 @@ $color_top:#F1E4E6;
     padding: 0 10px; 
 
     .header__flex {
-        display: flex;
-        justify-content: space-between;    
+        @include SpaceBetween;   
         
         .header__right {
             align-self: center;
@@ -74,8 +93,7 @@ $color_top:#F1E4E6;
         }
 
         .nav__list {
-            display: flex;
-            flex-direction: column;
+            @include DirectionColumn;
             padding-top: 12px;
         }
 
@@ -90,8 +108,8 @@ $color_top:#F1E4E6;
 
         .nav__link {
             text-decoration: none;
-            font-size: 14px;
-            line-height: 17px;
+            font-size: $main-fontsize;
+            line-height: $main-lineheight;
             color: #6F6E6E;
         }
 
@@ -101,30 +119,30 @@ $color_top:#F1E4E6;
 
         .nav__title {
             padding-top: 9px;
-            font-size: 14px;
-            line-height: 17px;
-            color: #000000;
+            font-size: $main-fontsize;
+            line-height: $main-lineheight;
+            color: $color-black;
         }
 
         .nav__heading {
             padding-top: 20px;
-            font-size: 14px;
-            line-height: 17px;
-            color: #F16D7F;
+            font-size: $main-fontsize;
+            line-height: $main-lineheight;
+            color: $main-color;
         }
     }     
 }
 
 
 .top {
-    background: $color_top;
+    background: #F1E4E6;
     height: 100vh;
 
     .top__flex {
         height: 100vh;
         display: flex;
-        justify-content: flex-end;
         align-items: center;
+        justify-content: flex-end;
         background-image: url(../Pics/A_man.png);
         background-repeat: no-repeat;
         background-position: -13vw;
@@ -147,7 +165,7 @@ $color_top:#F1E4E6;
     }
     
     .fashion {
-        color: #F16D7F;
+        color: $main-color;
     }
 }
 
@@ -156,9 +174,8 @@ $color_top:#F1E4E6;
     margin-bottom: 76px;
 
     .top__offer{
-        display: flex;
+        @include SpaceBetween;
         flex-wrap: wrap;
-        justify-content: space-between;
         gap: 19px;
     }
 
@@ -167,9 +184,7 @@ $color_top:#F1E4E6;
         height: 180px;
         background-image: url(../Pics/accesories.svg);
         background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include Align;
         text-align: center;
         font-size: 16px;
         line-height: 19px;
@@ -197,7 +212,7 @@ $color_top:#F1E4E6;
     }
 
     .red_text_for_offer {
-        color: #F16D7F;
+        color: $main-color;
         font-size: 24px;
     }
 }
@@ -210,8 +225,8 @@ $color_top:#F1E4E6;
 }
 
 .text_after_fetured_items {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $main-fontsize;
+    line-height: $main-lineheight;
     color: #9F9F9F;
     text-align: center;
     margin-top: 6px;
@@ -240,8 +255,8 @@ $color_top:#F1E4E6;
         }
 
         .cart-hover {
-            font-size: 14px;
-            line-height: 17px;
+            font-size: $main-fontsize;
+            line-height: $main-lineheight;
             color: #FFFFFF;
             position: absolute;
             transition: 0.5s;
@@ -251,9 +266,7 @@ $color_top:#F1E4E6;
             width: 100%;
             height: 100%;
             text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include Align;
             opacity: 0;
         }
 
@@ -269,15 +282,15 @@ $color_top:#F1E4E6;
         .name__item {
             font-size: 13px;
             line-height: 16px;
-            color: #000000;
+            color: $color-black;
             margin-top: 25px;
             margin-left: 18px;
         }
 
         .item__description {
             font-weight: 300;
-            font-size: 14px;
-            line-height: 17px;
+            font-size: $main-fontsize;
+            line-height: $main-lineheight;
             color: #5D5D5D;
             margin-top: 13px;
             margin-left: 17px;
@@ -286,7 +299,7 @@ $color_top:#F1E4E6;
         .price__item {
             font-size: 16px;
             line-height: 19px;
-            color: #F16D7F;
+            color: $main-color;
             margin-top: 18px;
             margin-left: 18px;
         }
@@ -303,8 +316,8 @@ $color_top:#F1E4E6;
     line-height: 19px;
     text-align: center;
     text-decoration: none;
-    color: black;
-    border: 1px solid black;
+    color: $color-black;
+    border: 1px solid $color-black;
     padding: 14px 39px;
     box-sizing: border-box;
     margin-bottom: 75px;
@@ -312,12 +325,10 @@ $color_top:#F1E4E6;
 
 .upper__footer {
     min-height: 341px;
-    background: #222224;
+    background: $color_dark;
 
     .upper__footer__flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include Align;
         gap: 30px;
         height: 341px;
 
@@ -373,10 +384,10 @@ $color_top:#F1E4E6;
 .middle__footer {
     height: 448px;
     background: url(../Pics/middle_footer_mountains.png);
+    background-size: cover;
 
     .middle__footer__flex {
-        display: flex;
-        justify-content: space-between;
+        @include SpaceBetween;
         align-items: center;
         height: 448px;
     }
@@ -393,7 +404,7 @@ $color_top:#F1E4E6;
     .subsribe__text__left {
         font-size: 20px;
         line-height: 24px;
-        color: #222224;
+        color: $color_dark;
         height: 189px;
         display: flex;
         align-items: flex-end;
@@ -409,7 +420,7 @@ $color_top:#F1E4E6;
     .subsribe__text__right {
         font-size: 18px;
         line-height: 30px;
-        color: #222224;
+        color: $color_dark;
         text-align: center;
     }
     
@@ -431,7 +442,7 @@ $color_top:#F1E4E6;
             border-top-left-radius: 25px;
             border-bottom-left-radius: 25px;
             border: none;
-            color: #222224;
+            color: $color_dark;
             opacity: 0.67;
             background: #E1E1E1;
         }
@@ -442,9 +453,9 @@ $color_top:#F1E4E6;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
             border: none;
-            background: #F16D7F;
-            font-size: 14px;
-            line-height: 17px;
+            background: $main-color;
+            font-size: $main-fontsize;
+            line-height: $main-lineheight;
             color: #FFFFFF;
             cursor: pointer;
         }
@@ -457,12 +468,11 @@ $color_top:#F1E4E6;
 }
 
 .lower__footer {
-    background: #222224;
+    background: $color_dark;
     padding: 20px 0;
 
     .lower__footer__flex {
-        display: flex;
-        justify-content: space-between;
+        @include SpaceBetween;
     }
 
     .lower__footer__left {
@@ -488,7 +498,7 @@ $color_top:#F1E4E6;
     }
 
     .social__icon:hover {
-        background: #F16D7F;
+        background: $main-color;
         transform: scale(1.5) rotateX(360deg)
     }
     
@@ -509,8 +519,7 @@ $color_top:#F1E4E6;
     margin-bottom: 51px;
 
     .header__catalog__flex {
-        display: flex;
-        justify-content: space-between;
+        @include SpaceBetween;
         align-items: center;
         height: 148px;
     }
@@ -518,13 +527,13 @@ $color_top:#F1E4E6;
     .header__catalog__left {
         font-size: 24px;
         line-height: 29px;
-        color: #F16D7F;
+        color: $main-color;
     }
     
     .header__catalog__text {
         text-decoration: none;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: $main-fontsize;
+        line-height: $main-lineheight;
         color: #636363;
     }
 }
@@ -535,16 +544,15 @@ $color_top:#F1E4E6;
 
 .filter-right {
     display: flex;
-    position: absolute;
-    left: 36%;
+    margin-left: 3%;
     gap: 27px;
 }
 
 .main-filter {
     list-style: none;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $main-fontsize;
+    line-height: $main-lineheight;
     color: #6F6E6E;
     padding-left: 16px;
 }
@@ -582,15 +590,14 @@ $color_top:#F1E4E6;
 }
 
 .filter .filter--category {
-    display: flex;
-    flex-direction: column;
+    @include DirectionColumn;
     margin: 24px 0px;
     margin-left: 12px;
 }
 
 .filter--category a {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $main-fontsize;
+    line-height: $main-lineheight;
     text-decoration: none;
     color: #6F6E6E;
 }
@@ -602,8 +609,8 @@ $color_top:#F1E4E6;
 .summary--catalog {
     width: 327px;
     height: 37px;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $main-fontsize;
+    line-height: $main-lineheight;
     padding: 10px;
     border-left: 5px solid #EF5B70;
     list-style: none;
@@ -616,8 +623,8 @@ $color_top:#F1E4E6;
 
 .right-filter {
     list-style: none;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $main-fontsize;
+    line-height: $main-lineheight;
     color: #6F6E6E;
     cursor: pointer;
 }
@@ -651,7 +658,7 @@ $color_top:#F1E4E6;
 .pages {
     width: 284px;
     height: 44px;
-    border: 1px solid black;
+    border: 1px solid $color-black;
     margin: 0 auto;
     margin-bottom: 96px;
 }
@@ -663,8 +670,7 @@ $color_top:#F1E4E6;
     height: 148px;
 
     .header__product__flex {
-        display: flex;
-        justify-content: space-between;
+        @include SpaceBetween;
         align-items: center;
         height: 148px;
     }
@@ -672,13 +678,13 @@ $color_top:#F1E4E6;
     .header__product__left {
         font-size: 24px;
         line-height: 29px;
-        color: #F16D7F;
+        color: $main-color;
     }
     
     .header__product__text {
         text-decoration: none;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: $main-fontsize;
+        line-height: $main-lineheight;
         color: #636363;
     }
 }
@@ -698,15 +704,14 @@ $color_top:#F1E4E6;
     height: 601px;
 
     .product__collection__flex {
-        display: flex;
-        flex-direction: column;
+        @include DirectionColumn;
         align-items: center;
     }
 
     .product__collection__flex h1 {
-        font-size: 14px;
-        line-height: 17px;
-        color: #F16D7F;
+        font-size: $main-fontsize;
+        line-height: $main-lineheight;
+        color: $main-color;
         text-align: center;
         padding-top: 64px;
         font-weight: 300;
@@ -731,8 +736,8 @@ $color_top:#F1E4E6;
     }
     
     .product__collection__flex p {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: $main-fontsize;
+        line-height: $main-lineheight;
         max-width: 555px;
         text-align: center;
         color: #5E5E5E;
@@ -759,11 +764,10 @@ $color_top:#F1E4E6;
 
     .details__product {
         max-width: 370px;
-        display: flex;
+        @include SpaceBetween;
         flex-wrap: wrap;
-        justify-content: space-between;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: $main-fontsize;
+        line-height: $main-lineheight;
         color: #6F6E6E;
         gap: 20px;
     }
@@ -810,8 +814,7 @@ $color_top:#F1E4E6;
 
     &__flex {
         min-height: 774px;
-        display: flex;
-        justify-content: space-between;
+        @include SpaceBetween;
     }
 
     &__left {
@@ -859,7 +862,7 @@ $color_top:#F1E4E6;
             }
 
             & span{
-                color: #F16D7F;
+                color: $main-color;
             }
 
             & p:last-child::after {
@@ -881,16 +884,15 @@ $color_top:#F1E4E6;
         &__text {
             margin-top: 72px;
             width: 100%;
-            display: flex;
-            justify-content: space-between; 
+            @include SpaceBetween;
 
             &__btn {
                 border: 1px solid #A4A4A4;
                 background: none;
                 font-weight: 300;
-                font-size: 14px;
-                line-height: 17px;
-                color: #000000;
+                font-size: $main-fontsize;
+                line-height: $main-lineheight;
+                color: $color-black;
                 padding: 16.5px 40px;
                 cursor: pointer;
             }  
@@ -905,8 +907,7 @@ $color_top:#F1E4E6;
         &__up {
             max-width: 360px;
             width: 100%;
-            display: flex;
-            flex-direction: column;
+            @include DirectionColumn;
 
             & h2 {
                 font-weight: 300;
@@ -976,7 +977,7 @@ $color_top:#F1E4E6;
         }
     
         & span {
-            color: #F16D7F;
+            color: $main-color;
         }
     
         & hr {
@@ -993,14 +994,13 @@ $color_top:#F1E4E6;
             line-height: 19px;
             color: #FFFFFF;
             border: none;
-            background: #F16D7F;
+            background: $main-color;
             padding: 15.5px 42px;
             margin-top: 17px;
             margin-left: 38.5px;
             cursor: pointer;
         }
     }
-
 }
     
 
@@ -1009,13 +1009,11 @@ $color_top:#F1E4E6;
     margin-top: 64px;
 
     &__flex {
-        display: flex;
-        justify-content: space-between;
+        @include SpaceBetween;
 
         &__form {
             width: 360px;
-            display: flex;
-            flex-direction: column;
+            @include DirectionColumn;
 
             & > p {
                 font-weight: 300;
@@ -1069,11 +1067,11 @@ $color_top:#F1E4E6;
             & > button {
                 width: 167px;
                 padding: 16.5px 0;
-                font-size: 14px;
-                line-height: 17px;
+                font-size: $main-fontsize;
+                line-height: $main-lineheight;
                 color: #FFFFFF;
                 border: none;
-                background: #F16D7F;
+                background: $main-color;
                 cursor: pointer;
             }
 
@@ -1166,20 +1164,6 @@ $color_top:#F1E4E6;
         margin-top: 37px;
     }
 
-/*Медиа запросы для страницы Registration*/
-
-    .filter__flex {
-        max-width: 770px;
-    }
-
-    .main-filter {
-        padding-left: 0px;
-    }
-
-    .filter-right {
-        left: 57%;
-    }
-
 /*Медиа запросы для страницы Catalog*/
 
     .card:nth-child(9) {
@@ -1192,6 +1176,18 @@ $color_top:#F1E4E6;
 
     .pages {
         margin-bottom: 63px;
+    }
+
+    .filter__flex {
+        max-width: 770px;
+    }
+
+    .main-filter {
+        padding-left: 0px;
+    }
+
+    .filter-right {
+        margin-left: 12.7%;
     }
 }
 
@@ -1215,7 +1211,11 @@ $color_top:#F1E4E6;
 /*Медиа запросы для страницы Catalog*/
 
     .filter-right {
-        left: 59.5%;
+        margin-left: 11.1%;
+    }
+
+    .filter__flex {
+        max-width: 757px;
     }
 }
 
@@ -1225,6 +1225,7 @@ $color_top:#F1E4E6;
 
     .upper__footer .upper__footer__flex {
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     .upper__footer {
@@ -1283,6 +1284,16 @@ $color_top:#F1E4E6;
     .card:nth-child(odd) {
         margin-right: 0px;
         margin-bottom: 0px;
+    }
+
+/*Медиа запросы для страницы Catalog*/
+
+    .filter__flex {
+        max-width: 741px;
+    }
+
+    .filter-right {
+        margin-left: 9%;
     }
 }
 
@@ -1368,14 +1379,6 @@ $color_top:#F1E4E6;
         box-shadow: none;
     }
 
-    .filter__flex {
-        max-width: 380px;
-    }
-
-    .filter-right {
-        left: 38%;
-    }
-
     .card:nth-child(9) {
         display: block;
     }
@@ -1390,6 +1393,11 @@ $color_top:#F1E4E6;
 
     .card:nth-child(9) {
         margin-bottom: 40px;
+    }
+
+    .filter__flex {
+        max-width: 380px;
+        justify-content: space-between;
     }
 }
 
@@ -1553,6 +1561,18 @@ $color_top:#F1E4E6;
         margin-top: 17px;
         width: 100%;
     }
+
+/*Медиа запросы для страницы Registration*/
+
+    .registration__flex__form {
+        max-width: 360px;
+        width: 100%;
+    }
+
+    .registration__flex__form > .input {
+        max-width: 360px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 323px) {
@@ -1565,6 +1585,12 @@ $color_top:#F1E4E6;
 
     .cart__right__down .grand {
         padding-left: 0px;
+    }
+
+/*Медиа запросы для страницы Catalog*/
+
+    .card__item__flex .card .card__img {
+        height: 418px;
     }
 }
 
