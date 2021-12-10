@@ -19,7 +19,68 @@
                     <a class="left_pic" href="#"><img src="Pics/Forma_1.svg" alt="logo_left"></a>
                 </nav>
                 <nav class="header__right">
-                    <a class="right_pic" href="#"><img src="Pics/Forma_1_right.svg" alt="logo_right"></a>
+                    <input id="burger" type="checkbox">
+                    <label class="right_pic_burger" for="burger">&#9776;</label>
+                    <nav class="header__nav">
+                        <div class="nav__wrap">
+                            <label class="nav__close" for="burger">&#128473;</label>
+                            <h2 class="nav__title">MENU</h2>
+                            <h3 class="nav__heading">MAN</h3>
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Accessories</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Bags</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Denim</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">T-Shirts</a>
+                                </li>
+                            </ul>
+                            <h3 class="nav__heading">WOMAN</h3>
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Accessories</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Jackets&nbsp;&&nbsp;Coats</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Polos</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">T-Shirts</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Shirts</a>
+                                </li>
+                            </ul>
+                            <h3 class="nav__heading">KIDS</h3>
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Accessories</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Jackets&nbsp;&&nbsp;Coats</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Polos</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">T-Shirts</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Shirts</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="">Bags</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                     <a class="right_pic" href="registration.html"><img src="Pics/Forma_man_right.svg"
                             alt="logo_right"></a>
                     <a class="right_pic" href="cart.html"><img src="Pics/Group_35_right.svg" alt="logo_right"></a>
@@ -40,11 +101,7 @@
         </div>
     </header>
     <main>
-        <section class="product__top">
-            <div class="container product__flex">
-                <img class="product__img" src="Pics/product_slideshow.png" alt="slideshow_pic">
-            </div>
-        </section>
+        <div class="product__top"></div>
         <section class="product__collection">
             <div class="container product">
                 <article class="product__collection__flex">
@@ -76,16 +133,9 @@
             <div class="container">
                 <section class="card__item__flex">
                     <article class="card">
-                        <img class="card__img" src="Pics/pic_card4.png" alt="pic_card4">
-                        <h3 class="name__item">ELLERY X M'O CAPSULE</h3>
-                        <p class="item__description">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="price__item">$52.00</p>
-                    </article>
-                    <article class="card">
-                        <div>
-                            <img class="card__img" src="Pics/pic_card3.png" alt="pic_card5">
+                        <div class="card-hover">
+                            <img class="card__img" src="Pics/pic_card4.png" alt="pic_card4">
+                            <a href="cart.html" class="cart-hover" target="_blank">Add to Cart</a>
                         </div>
                         <div>
                             <h3 class="name__item">ELLERY X M'O CAPSULE</h3>
@@ -97,8 +147,23 @@
                         </div>
                     </article>
                     <article class="card">
+                        <div class="card-hover">
+                            <img class="card__img" src="Pics/pic_card3.png" alt="pic_card5">
+                            <a href="cart.html" class="cart-hover" target="_blank">Add to Cart</a>
+                        </div>
                         <div>
+                            <h3 class="name__item">ELLERY X M'O CAPSULE</h3>
+                            <p class="item__description">Known for her sculptural takes on traditional tailoring,
+                                Australian
+                                arbiter of cool Kym Ellery
+                                teams up with Moda Operandi.</p>
+                            <p class="price__item">$52.00</p>
+                        </div>
+                    </article>
+                    <article class="card card--product">
+                        <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card6.png" alt="pic_card6">
+                            <a href="cart.html" class="cart-hover" target="_blank">Add to Cart</a>
                         </div>
                         <div>
                             <h3 class="name__item">ELLERY X M'O CAPSULE</h3>
@@ -137,10 +202,10 @@
                 <p class="lower__footer__left__text">2021 Brand All Rights Reserved.</p>
             </article>
             <nav class="lower__footer__right">
-                <a href="#"><i class="fab fa-facebook-f social__icon"></i></a>
-                <a href="#"><i class="fab fa-instagram social__icon"></i></a>
-                <a href="#"><i class="fab fa-pinterest-p social__icon"></i></a>
-                <a href="#"><i class="fab fa-twitter social__icon"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f social__icon"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram social__icon"></i></a>
+                <a href="https://www.pinterest.ru/" target="_blank"><i class="fab fa-pinterest-p social__icon"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter social__icon"></i></a>
             </nav>
         </div>
     </footer>
