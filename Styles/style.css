@@ -58,6 +58,8 @@
   width: 232px;
   height: 100vh;
   background: white;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
   overflow: scroll;
   overflow-x: hidden;
   z-index: 2;
@@ -662,12 +664,6 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
-.details-filter[open] {
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  background-color: #FFFFFF;
-}
-
 .details-filter [open] summary {
   color: #EF5B70;
 }
@@ -678,6 +674,7 @@ details summary::-webkit-details-marker {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   background: #FFFFFF;
+  border-radius: 10px;
   width: 360px;
   color: #6F6E6E;
   padding-bottom: 16px;
@@ -754,6 +751,7 @@ details summary::-webkit-details-marker {
   padding-top: 7px;
   gap: 6px;
   background-color: white;
+  border-radius: 10px;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -1076,6 +1074,13 @@ details summary::-webkit-details-marker {
   color: #000000;
   padding: 16.5px 40px;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cart__left__text__btn:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .cart__right {
@@ -1151,6 +1156,13 @@ details summary::-webkit-details-marker {
   background: none;
   margin-top: 23px;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cart__right__up__btn:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .cart__right__down {
@@ -1200,6 +1212,13 @@ details summary::-webkit-details-marker {
   margin-top: 17px;
   margin-left: 38.5px;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cart__right__down__btn:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .registration {
@@ -1275,10 +1294,23 @@ details summary::-webkit-details-marker {
   line-height: 13px;
   margin-top: 31px;
   margin-bottom: 33px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .registration__flex__form > .radio > .input:last-child {
   margin-left: 20px;
+}
+
+.registration__flex__form > .radio > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .registration__flex__form > .please {

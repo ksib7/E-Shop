@@ -70,6 +70,8 @@ $main-lineheight: 17px;
             width: 232px;
             height: 100vh;
             background: white;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
             overflow: scroll;
             overflow-x: hidden;
             z-index: 2;
@@ -576,11 +578,6 @@ details summary::-webkit-details-marker {
     display: none;
 }
 
-.details-filter[open] {
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    background-color: #FFFFFF;
-}
-
 .details-filter [open] summary {
     color: #EF5B70;
 }
@@ -590,6 +587,7 @@ details summary::-webkit-details-marker {
     padding-top: 16px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     background: #FFFFFF;
+    border-radius: 10px;
     width: 360px;
     color: #6F6E6E;
     padding-bottom: 16px;
@@ -660,6 +658,7 @@ details summary::-webkit-details-marker {
     padding-top: 7px;
     gap: 6px;
     background-color: white;
+    border-radius: 10px;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
@@ -941,6 +940,11 @@ details summary::-webkit-details-marker {
                 color: $color-black;
                 padding: 16.5px 40px;
                 cursor: pointer;
+                transition: all 0.5s;
+            }
+
+            &__btn:hover {
+                transform: scale(1.15);
             }  
         }
     }
@@ -997,6 +1001,11 @@ details summary::-webkit-details-marker {
         background: none;
         margin-top: 23px;
         cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    &__right__up__btn:hover {
+        transform: scale(1.15);
     }
 
     &__right__down {
@@ -1045,6 +1054,11 @@ details summary::-webkit-details-marker {
             margin-top: 17px;
             margin-left: 38.5px;
             cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        &__btn:hover {
+            transform: scale(1.15);
         }
     }
 }
@@ -1095,9 +1109,16 @@ details summary::-webkit-details-marker {
                 line-height: 13px;
                 margin-top: 31px;
                 margin-bottom: 33px;
+                height: 15px;
+                display: flex;
 
                 & > .input:last-child {
                     margin-left: 20px;
+                }
+
+                & > label {
+                    display: flex;
+                    align-items: center;
                 }
             }
 
