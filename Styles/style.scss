@@ -187,13 +187,18 @@ $main-lineheight: 17px;
     .offer__item {
         width: 100%;
         height: 180px;
-        background-image: url(../Pics/accesories.svg);
+        background-image: url(../Pics/accesories.png);
         background-position: center;
         @include Align;
         text-align: center;
         font-size: 16px;
         line-height: 19px;
         color: #FFFFFF;
+        position: relative;
+    }
+
+    .offer__item p {
+        z-index: 2;
     }
 
     .offer__item:not(:last-child) {
@@ -202,18 +207,31 @@ $main-lineheight: 17px;
     }
     
     .offer__item:nth-child(1) {
-        background-image: url(../Pics/for_woman.svg);
+        background-image: url(../Pics/for_women.png);
         background-position: center;
+        position: relative;
+    }
+
+    .background-index {
+        background: #211616;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.7;
+        left: 0;
     }
     
     .offer__item:nth-child(2) {
-        background-image: url(../Pics/for_man.svg);
+        background-image: url(../Pics/for_men.png);
         background-position: center;
+        position: relative;
     }
     
     .offer__item:nth-child(3) {
-        background-image: url(../Pics/for_kids.svg);
+        background-image: url(../Pics/for_kids.png);
         background-position: center;
+        position: relative;
     }
 
     .red_text_for_offer {
@@ -246,7 +264,7 @@ $main-lineheight: 17px;
     .card {
         max-width: 360px;
         width: 100%;
-        height: 581px;
+        min-height: 581px;
         background: #F8F8F8;
 
         .card__img {
@@ -277,6 +295,7 @@ $main-lineheight: 17px;
 
         .cart-hover:hover {
             opacity: 1;
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         }
 
         .cart-hover::before {
@@ -288,8 +307,19 @@ $main-lineheight: 17px;
             font-size: 13px;
             line-height: 16px;
             color: $color-black;
-            margin-top: 25px;
             margin-left: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .name__item:hover {
+            transform: scale(1.15);
+        }
+
+        .card-margin {
+            margin-top: 25px;
         }
 
         .item__description {
@@ -326,6 +356,13 @@ $main-lineheight: 17px;
     padding: 14px 39px;
     box-sizing: border-box;
     margin-bottom: 75px;
+    transition: all ease-in-out 0.5s;
+}
+
+.browse__all__product:hover {
+    transform: scale(1.15);
+    background-color: #F16D7F;
+    border: none;
 }
 
 .upper__footer {
@@ -540,6 +577,11 @@ $main-lineheight: 17px;
         font-size: $main-fontsize;
         line-height: $main-lineheight;
         color: #636363;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .header__catalog__text:hover {
+        color: $main-color;
     }
 }
 
@@ -731,6 +773,11 @@ details summary::-webkit-details-marker {
         font-size: $main-fontsize;
         line-height: $main-lineheight;
         color: #636363;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .header__product__text:hover {
+        color: $main-color;
     }
 }
 
@@ -817,6 +864,10 @@ details summary::-webkit-details-marker {
         gap: 20px;
     }
 
+    .details__product > details {
+        cursor: pointer;
+    }
+
     .summary {
         list-style: none;
     }
@@ -827,6 +878,8 @@ details summary::-webkit-details-marker {
     }
     
     .product__collection__flex .cart__btn {
+        display: flex;
+        align-items: center;
         font-size: 16px;
         line-height: 19px;
         color: #F26376;
@@ -837,8 +890,13 @@ details summary::-webkit-details-marker {
         padding-right: 52px;
         margin-top: 48px;
         position: relative;
+        transition: all ease-in-out 0.5s;
     }
-    
+
+    .cart__btn:hover {
+        transform: scale(1.15);
+    }
+
     .cart__btn::before {
         content: url(../Pics/product_cart.svg);
         margin-right: 23px;
