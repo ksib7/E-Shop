@@ -291,6 +291,8 @@ $main-lineheight: 17px;
             text-decoration: none;
             @include Align;
             opacity: 0;
+            border: none;
+            cursor: pointer;
         }
 
         .cart-hover:hover {
@@ -891,6 +893,10 @@ details summary::-webkit-details-marker {
         margin-top: 48px;
         position: relative;
         transition: all ease-in-out 0.5s;
+        background: none;
+        cursor: pointer;
+        width: 205px;
+        height: 51px;
     }
 
     .cart__btn:hover {
@@ -1738,8 +1744,6 @@ details summary::-webkit-details-marker {
         height: 418px;
     }
 }
-
-
 
 
 

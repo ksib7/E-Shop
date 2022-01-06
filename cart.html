@@ -8,6 +8,7 @@
     <title>Cart</title>
     <link rel="stylesheet" href="Styles/style.css">
     <script src="https://kit.fontawesome.com/624f5451d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -141,9 +142,9 @@
                 <section class="cart__right">
                     <form class="cart__right__up">
                         <h2>SHIPPING ADRESS</h2>
-                        <input class="cart__right__form" type="text" placeholder="Bangladesh" required>
-                        <input class="cart__right__form" type="text" placeholder="State" required>
-                        <input class="cart__right__form" type="text" placeholder="Postcode / Zip" required>
+                        <input id="input-1" class="cart__right__form" type="text" placeholder="Bangladesh">
+                        <input id="input-2" class="cart__right__form" type="text" placeholder="State">
+                        <input id="input-3" class="cart__right__form" type="text" placeholder="Postcode / Zip">
                         <button class="cart__right__up__btn">GET A QUOTE</button>
                     </form>
                     <div class="cart__right__down">
@@ -187,6 +188,7 @@
             </nav>
         </div>
     </footer>
+    <script src="Js/cart.js"></script>
 </body>
 
 </html>

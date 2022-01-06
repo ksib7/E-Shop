@@ -8,6 +8,7 @@
     <title>Registration</title>
     <link rel="stylesheet" href="Styles/style.css">
     <script src="https://kit.fontawesome.com/624f5451d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -100,15 +101,15 @@
             <div class="container registration__flex">
                 <form class="registration__flex__form" action="#">
                     <p>Your Name</p>
-                    <input class="input" type="text" placeholder="First name" required>
-                    <input class="input" type="text" placeholder="Last name" required>
+                    <input id="input-1" class="input" type="text" placeholder="First name">
+                    <input id="input-2" class="input" type="text" placeholder="Last name">
                     <div class="radio">
                         <label class="input"><input type="radio" name="poll">&nbsp;&nbsp;&nbsp;Male</label>
                         <label class="input"><input type="radio" name="poll">&nbsp;&nbsp;&nbsp;Female</label>
                     </div>
                     <p>Login details</p>
-                    <input class="input" type="email" placeholder="Email" required>
-                    <input class="input" type="password" placeholder="Password" required>
+                    <input id="input-3" class="input" type="email" placeholder="Email">
+                    <input id="input-4" class="input" type="password" placeholder="Password">
                     <p class="please">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
                         and lowercase
                         letters</p>
@@ -158,6 +159,7 @@
             </nav>
         </div>
     </footer>
+    <script src="Js/registration.js"></script>
 </body>
 
 </html>

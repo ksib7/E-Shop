@@ -316,6 +316,8 @@
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
+  border: none;
+  cursor: pointer;
 }
 
 .card__item__flex .card .cart-hover:hover {
@@ -1022,6 +1024,10 @@ details summary::-webkit-details-marker {
   position: relative;
   -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
+  background: none;
+  cursor: pointer;
+  width: 205px;
+  height: 51px;
 }
 
 .product .cart__btn:hover {
