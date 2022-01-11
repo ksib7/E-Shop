@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Product</title>
     <link rel="stylesheet" href="Styles/style.css">
     <script src="https://kit.fontawesome.com/624f5451d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -16,8 +16,8 @@
         <div class="container">
             <nav class="header__flex">
                 <nav class="header__left">
-                    <a class="left_pic" href="index.html"><img src="Pics/Group_2.png" alt="logo"></a>
-                    <a class="left_pic" href="#"><img src="Pics/Forma_1.svg" alt="logo"></a>
+                    <a class="left_pic" href="index.html"><img src="Pics/Group_2.png" alt="logo_left"></a>
+                    <a class="left_pic" href="#"><img src="Pics/Forma_1.svg" alt="logo_left"></a>
                 </nav>
                 <nav class="header__right">
                     <input id="burger" type="checkbox">
@@ -89,80 +89,50 @@
             </nav>
         </div>
     </header>
-    <main>
-        <header class="top">
-            <div class="container top__flex">
-                <h1 class="top__text"><span class="the_brand">THE BRAND</span><br><span class="of_luxerius">OF
-                        LUXERIOUS</span> <span class="fashion">FASHION</span></h1>
+    <header class="header__product">
+        <div class="container header__product__flex">
+            <div>
+                <p class="header__product__left">NEW ARRIVALS</p>
             </div>
-        </header>
-        <section class="top__offer_item">
-            <div class="container top__offer">
-                <article class="offer__item">
-                    <p>30% OFF<span class="red_text_for_offer"><br>FOR WOMEN</span></p>
-                    <div class="background-index"></div>
-                </article>
-                <article class="offer__item">
-                    <p> HOT DEAL<span class="red_text_for_offer"><br>FOR MEN</span></p>
-                    <div class="background-index"></div>
-                </article>
-                <article class="offer__item">
-                    <p>NEW ARRIVALS<span class="red_text_for_offer"><br>FOR KIDS</span></p>
-                    <div class="background-index"></div>
-                </article>
-                <article class="offer__item">
-                    <p>LUXIROUS & TRENDY<span class="red_text_for_offer"><br>ACCESORIES</span></p>
-                    <div class="background-index"></div>
+            <nav>
+                <a class="header__product__text" href="#">HOME&nbsp;/</a>
+                <a class="header__product__text" href="#">MEN&nbsp;/</a>
+                <a class="header__product__text" href="#">NEW ARRIVALS</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="product__top"></div>
+        <section class="product__collection">
+            <div class="container product">
+                <article class="product__collection__flex">
+                    <h1>WOMEN COLLECTION</h1>
+                    <hr class="hr1">
+                    <h2>MOSCHINO CHEAP AND CHIC</h2>
+                    <p>Compellingly actualize fully researched processes before proactive
+                        outsourcing. Progressively
+                        syndicate collaborative architectures before cutting-edge services. Completely visualize
+                        parallel core competencies rather than exceptional portals. </p>
+                    <p class="price">$561</p>
+                    <hr class="hr2">
+                    <nav class="details__product">
+                        <details>
+                            <summary class="summary">CHOOSE COLOR</summary>
+                        </details>
+                        <details>
+                            <summary class="summary">CHOOSE SIZE</summary>
+                        </details>
+                        <details>
+                            <summary class="summary">QUANTITY</summary>
+                        </details>
+                    </nav>
+                    <button class="cart__btn">Add to cart</button>
                 </article>
             </div>
         </section>
-        <section>
+        <div>
             <div class="container">
-                <h2 class="text_fetured_items">Fetured Items</h2>
-                <p class="text_after_fetured_items">Shop for items based on what we featured in this week</p>
                 <section class="card__item__flex">
-                    <article class="card">
-                        <div class="card-hover">
-                            <img class="card__img" src="Pics/pic_card1.png" alt="pic_card1">
-                            <button class="cart-hover">Add to Cart</button>
-                        </div>
-                        <div class="card-margin">
-                            <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
-                            <p class="item__description">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery
-                                teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-hover">
-                            <img class="card__img" src="Pics/pic_card2.png" alt="pic_card2">
-                            <button class="cart-hover">Add to Cart</button>
-                        </div>
-                        <div class="card-margin">
-                            <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
-                            <p class="item__description">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery
-                                teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-hover">
-                            <img class="card__img" src="Pics/pic_card3.png" alt="pic_card3">
-                            <button class="cart-hover">Add to Cart</button>
-                        </div>
-                        <div class="card-margin">
-                            <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
-                            <p class="item__description">Known for her sculptural takes on traditional tailoring,
-                                Australian
-                                arbiter of cool Kym Ellery
-                                teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
-                        </div>
-                    </article>
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card4.png" alt="pic_card4">
@@ -179,7 +149,7 @@
                     </article>
                     <article class="card">
                         <div class="card-hover">
-                            <img class="card__img" src="Pics/pic_card5.png" alt="pic_card5">
+                            <img class="card__img" src="Pics/pic_card3.png" alt="pic_card5">
                             <button class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
@@ -191,7 +161,7 @@
                             <p class="price__item">$52.00</p>
                         </div>
                     </article>
-                    <article class="card">
+                    <article class="card card--product">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card6.png" alt="pic_card6">
                             <button class="cart-hover">Add to Cart</button>
@@ -206,37 +176,9 @@
                         </div>
                     </article>
                 </section>
-                <nav class="browse__all__product__flex">
-                    <a class="browse__all__product" href="catalog.html">Browse All Product</a>
-                </nav>
             </div>
-        </section>
-        <section class="upper__footer">
-            <div class="container upper__footer__flex">
-                <article class="upper__footer__item">
-                    <h4 class="upper__footer__heading">Free Delivery</h4>
-                    <p class="upper__footer__description">Worldwide delivery on all. Authorit tively morph
-                        next-generation
-                        innov tion with extensive models.
-                    </p>
-                </article>
-                <article class="upper__footer__item">
-                    <h4 class="upper__footer__heading">Sales & discounts</h4>
-                    <p class="upper__footer__description">Worldwide delivery on all. Authorit tively morph
-                        next-generation
-                        innov tion with extensive models.
-                    </p>
-                </article>
-                <article class="upper__footer__item">
-                    <h4 class="upper__footer__heading">Quality assurance</h4>
-                    <p class="upper__footer__description">Worldwide delivery on all. Authorit tively morph
-                        next-generation
-                        innov tion with extensive models.
-                    </p>
-                </article>
-            </div>
-        </section>
-        <footer class="middle__footer">
+        </div>
+        <footer class="middle__footer footer--margin">
             <div class="container middle__footer__flex">
                 <article class="subscribe">
                     <p class="subsribe__text__left">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
@@ -268,7 +210,7 @@
             </nav>
         </div>
     </footer>
-    <script src="Js/index.js"></script>
+    <script src="Js/product.js"></script>
 </body>
 
 </html>
