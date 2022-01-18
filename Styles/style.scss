@@ -45,6 +45,7 @@ $main-lineheight: 17px;
         
         .header__right {
             align-self: center;
+            position: relative;
         }
 
         .left_pic:not(:last-child) {
@@ -53,6 +54,22 @@ $main-lineheight: 17px;
         
         .right_pic:not(:last-child) {
             margin-right: 33px;
+        }
+
+        .right_pic:last-child {
+            position: relative;
+        }
+
+        .right_pic > .amount {
+            position: absolute;
+            font-size: 20px;
+            line-height: 10px;
+            color: #FFFFFF;
+            background: #F16D7F;
+            padding: 8px;
+            border-radius: 36px;
+            right: 15px;
+            bottom: 21px;
         }
 
         .right_pic_burger {
@@ -66,12 +83,11 @@ $main-lineheight: 17px;
         .header__nav {
             position: absolute;
             right: 0;
-            top: 88.67px;
+            top: 67.5px;
             width: 232px;
             height: 100vh;
             background: white;
-            border-bottom-left-radius: 10px;
-            border-top-left-radius: 10px;
+            border-radius: 10px;
             overflow: scroll;
             overflow-x: hidden;
             z-index: 2;
@@ -134,6 +150,55 @@ $main-lineheight: 17px;
             font-size: $main-fontsize;
             line-height: $main-lineheight;
             color: $main-color;
+        }
+
+        .cartMenu {
+            position: absolute;
+            right: 0;
+            top: 123%;
+            background: white;
+            border-radius: 10px;
+            z-index: 2;
+
+            & hr {
+                background: black;
+                opacity: 0.1;
+            }
+
+            &__top {
+                display: grid;
+                grid-template-columns: 140px 97px 91px 100px;
+                grid-template-rows: 43px;
+                padding-top: 5px;
+                padding-left: 5px;
+                text-align: center;
+            }
+
+            &__bottom {
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .cartEl{
+            cursor: pointer;
+        }
+
+        .basketRow {
+            display: grid;
+            grid-template-columns: 140px 97px 91px 100px;
+            grid-template-rows: 43px;
+            margin-top: 5px;
+            padding-left: 5px;
+            text-align: center;
         }
     }     
 }
@@ -1332,6 +1397,10 @@ details summary::-webkit-details-marker {
 
     .card:nth-child(odd) {
         margin-right: 16px;
+        margin-bottom: 16px;
+    }
+
+    .card:nth-child(even) {
         margin-bottom: 16px;
     }
 

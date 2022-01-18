@@ -84,7 +84,24 @@
                     </nav>
                     <a class="right_pic" href="registration.html"><img src="Pics/Forma_man_right.svg"
                             alt="logo_right"></a>
-                    <a class="right_pic" href="cart.html"><img src="Pics/Group_35_right.svg" alt="logo_right"></a>
+                    <a class="right_pic cartEl"><img src="Pics/Group_35_right.svg" alt="logo_right">
+                        <span class="amount">0</span>
+                    </a>
+                    <section class="cartMenu hidden">
+                        <div class="cartMenu__top">
+                            <div>Название товара</div>
+                            <div>Количество</div>
+                            <div>Цена за шт.</div>
+                            <div>Итого</div>
+                        </div>
+                        <hr>
+                        <div class="cartMenu__bottom">
+                            <div>Товаров в корзине на сумму:</div>
+                            <div>
+                                $<span class="totalPrice">0</span>
+                            </div>
+                        </div>
+                    </section>
                 </nav>
             </nav>
         </div>
@@ -209,7 +226,7 @@
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card1_catalog.png" alt="pic_card1">
-                            <button class="cart-hover">Add to Cart</button>
+                            <button id="0" class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
                             <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
@@ -217,13 +234,13 @@
                                 Australian
                                 arbiter of cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
+                            <p class="price__item">$<span class="price">52.00</span></p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card2_catalog.png" alt="pic_card2">
-                            <button class="cart-hover">Add to Cart</button>
+                            <button id="1" class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
                             <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
@@ -231,13 +248,13 @@
                                 Australian
                                 arbiter of cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
+                            <p class="price__item">$<span class="price">52.00</span></p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card3_catalog.png" alt="pic_card3">
-                            <button class="cart-hover">Add to Cart</button>
+                            <button id="2" class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
                             <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
@@ -245,13 +262,13 @@
                                 Australian
                                 arbiter of cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
+                            <p class="price__item">$<span class="price">52.00</span></p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card4_catalog.png" alt="pic_card4">
-                            <button class="cart-hover">Add to Cart</button>
+                            <button id="3" class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
                             <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
@@ -259,13 +276,13 @@
                                 Australian
                                 arbiter of cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
+                            <p class="price__item">$<span class="price">52.00</span></p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card5_catalog.png" alt="pic_card5">
-                            <button class="cart-hover">Add to Cart</button>
+                            <button id="4" class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
                             <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
@@ -273,13 +290,13 @@
                                 Australian
                                 arbiter of cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
+                            <p class="price__item">$<span class="price">52.00</span></p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card6_catalog.png" alt="pic_card6">
-                            <button class="cart-hover">Add to Cart</button>
+                            <button id="5" class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
                             <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
@@ -287,13 +304,13 @@
                                 Australian
                                 arbiter of cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
+                            <p class="price__item">$<span class="price">52.00</span></p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card7_catalog.png" alt="pic_card6">
-                            <button class="cart-hover">Add to Cart</button>
+                            <button id="6" class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
                             <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
@@ -301,13 +318,13 @@
                                 Australian
                                 arbiter of cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
+                            <p class="price__item">$<span class="price">52.00</span></p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card8_catalog.png" alt="pic_card6">
-                            <button class="cart-hover">Add to Cart</button>
+                            <button id="7" class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
                             <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
@@ -315,13 +332,13 @@
                                 Australian
                                 arbiter of cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
+                            <p class="price__item">$<span class="price">52.00</span></p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-hover">
                             <img class="card__img" src="Pics/pic_card9_catalog.png" alt="pic_card6">
-                            <button class="cart-hover">Add to Cart</button>
+                            <button id="8" class="cart-hover">Add to Cart</button>
                         </div>
                         <div class="card-margin">
                             <a class="name__item" href="product.html" target="_blank">ELLERY X M'O CAPSULE</a>
@@ -329,7 +346,7 @@
                                 Australian
                                 arbiter of cool Kym Ellery
                                 teams up with Moda Operandi.</p>
-                            <p class="price__item">$52.00</p>
+                            <p class="price__item">$<span class="price">52.00</span></p>
                         </div>
                     </article>
                 </section>
