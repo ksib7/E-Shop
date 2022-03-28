@@ -84,7 +84,24 @@
                     </nav>
                     <a class="right_pic" href="registration.html"><img src="Pics/Forma_man_right.svg"
                             alt="logo_right"></a>
-                    <a class="right_pic" href="cart.html"><img src="Pics/Group_35_right.svg" alt="logo_right"></a>
+                    <a class="right_pic cartEl"><img src="Pics/Group_35_right.svg" alt="logo_right">
+                        <span class="amount">0</span>
+                    </a>
+                    <section class="cartMenu hidden">
+                        <div class="cartMenu__top">
+                            <div>Название товара</div>
+                            <div>Количество</div>
+                            <div>Цена за шт.</div>
+                            <div>Итого</div>
+                        </div>
+                        <hr>
+                        <div class="cartMenu__bottom">
+                            <div>Товаров в корзине на сумму:</div>
+                            <div>
+                                $<span class="totalPrice">0</span>
+                            </div>
+                        </div>
+                    </section>
                 </nav>
             </nav>
         </div>
@@ -188,6 +205,9 @@
             </nav>
         </div>
     </footer>
+    <script src="Js/cartIcon.js"></script>
+    <script src="Js/burgerMenu.js"></script>
+    <script src="Js/validationSubscribe.js"></script>
     <script src="Js/cart.js"></script>
 </body>
 
